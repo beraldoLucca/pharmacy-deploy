@@ -5,6 +5,7 @@ import styles from './stylesPatient.module.scss';
 import { format } from 'date-fns';
 import Router from 'next/router';
 import { useState } from "react";
+import Link from "next/link";
 
 interface Status {
     status: string;
@@ -37,7 +38,7 @@ export default function patientPage(props): JSX.Element {
     }
     const requestList = propsRequest.map((prop) =>
 
-        <tr className={styles.tr}>
+        <tr className={styles.tr} key={prop.cns}>
             <td className={styles.td}>{prop.cns}</td>
             <td className={styles.td}>{prop.cpf}</td>
             <td className={styles.td}>{prop.nameMedicine}</td>
@@ -78,9 +79,9 @@ export default function patientPage(props): JSX.Element {
                     {requestList}
                 </tbody>
             </table>
-            <a href="/writeOffRequest">
+            <Link href="/writeOffRequest">
                 <Button className={styles.inputSubmitComeback}>Voltar</Button>
-            </a>
+            </Link>
         </div>)
 }
 

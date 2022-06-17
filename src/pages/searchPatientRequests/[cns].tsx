@@ -2,7 +2,7 @@ import axios from "axios";
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
 import { Button } from "react-bootstrap";
 import styles from './stylesPatient.module.scss';
-import { Link } from "react-router-dom";
+import  Link  from "next/link";
 import { format } from 'date-fns';
 import classNames from "classnames";
 
@@ -51,9 +51,9 @@ export default function patientPage(props): JSX.Element {
                 {requestList}
                 </tbody>
             </table>
-            <a href="/searchPatientRequests">
+            <Link href="/searchPatientRequests">
                 <Button className={styles.inputSubmitComeback}>Voltar</Button>
-            </a>
+            </Link>
         </div>)
 }
 

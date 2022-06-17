@@ -2,7 +2,7 @@ import axios from "axios";
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
 import { Button } from "react-bootstrap";
 import styles from './stylesListPatients.module.scss';
-import { Link } from "react-router-dom";
+import  Link  from "next/link";
 import Router from 'next/router';
 import { format } from 'date-fns';
 import classNames from "classnames";
@@ -37,7 +37,7 @@ export default function patientPage(props): JSX.Element {
     
     const patientList = propsPatients.map((prop) =>
     
-        <tr className={styles.tr}>
+        <tr className={styles.tr} key={prop.cns}>
             <td className={styles.td}>{prop.cns}</td>
             <td className={styles.td}>{prop.cpf}</td>
             <td className={styles.td}>{prop.name}</td>
@@ -69,9 +69,9 @@ export default function patientPage(props): JSX.Element {
                     {patientList}
                 </tbody>
             </table>
-            <a href="/home">
+            <Link href="/home">
                 <Button className={styles.inputSubmitComeback}>Voltar</Button>
-            </a>
+            </Link>
         </div>)
 }
 
