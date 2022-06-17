@@ -19,7 +19,7 @@ interface Patient {
     age: number;
 }
 
-export default function patientPage(props): JSX.Element {
+export default function PatientPage(props): JSX.Element {
     const isRetirado = "RETIRADO";
     const [nome, setNome] = useState('');
     const [meses, setMeses] = useState('');
