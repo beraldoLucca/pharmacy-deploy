@@ -5,6 +5,7 @@ import styles from './stylesListMedicineSid.module.scss';
 import { format } from 'date-fns';
 import Router from 'next/router';
 import { useState } from "react";
+import Link from "next/link";
 
 interface Status {
     status: string;
@@ -40,9 +41,9 @@ export default function patientPage(props): JSX.Element {
                     {requestMedList}
                 </tbody>
             </table>
-            <a href="/searchAllMedicines">
+            <Link href="/searchAllMedicines">
                 <Button className={styles.inputSubmitComeback}>Voltar</Button>
-            </a>
+            </Link>
         </div>)
 }
 
