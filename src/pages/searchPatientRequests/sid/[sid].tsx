@@ -1,7 +1,7 @@
 import axios from "axios";
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
 import { Button } from "react-bootstrap";
-import styles from '././stylesPatient.module.scss';
+import styles from './stylesPatient.module.scss';
 import  Link  from "next/link";
 import { format } from 'date-fns';
 import classNames from "classnames";
