@@ -49,11 +49,7 @@ export default function Component() {
   
       
           return (
-            <div>
-            
-              <Button className={styles.botao} onClick={() => signIn('auth0', {callbackUrl: 'http://localhost:3000/api/auth/callback/auth0'})}>
-                Logar</Button>
-            </div>
+            <Home/>
           )
         
 };

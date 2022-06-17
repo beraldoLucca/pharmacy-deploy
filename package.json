@@ -19,15 +19,15 @@
     "jwt-decode": "^3.1.2",
     "moment": "^2.29.3",
     "mongodb": "3.6.10",
-    "next": "12.1.0",
+    "next": "^12.1.0",
     "next-auth": "^4.3.1",
-    "react": "17.0.2",
+    "react": "^17.0.2",
     "react-bootstrap": "^2.2.1",
-    "react-dom": "17.0.2",
+    "react-dom": "^17.0.2",
     "react-hook-form": "^7.28.1",
     "react-router-dom": "^6.2.2",
     "sass": "^1.49.9",
-    "swr": "^1.2.2"
+    "swr": "^1.3.0"
   },
   "devDependencies": {
     "@types/mongodb": "3.6.10",
@@ -37,5 +37,18 @@
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "typescript": "^4.6.2"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beraldoLucca/pharmacy-deploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beraldoLucca/pharmacy-deploy/issues"
+  },
+  "homepage": "https://github.com/beraldoLucca/pharmacy-deploy#readme"
 }
