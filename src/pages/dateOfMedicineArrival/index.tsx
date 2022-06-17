@@ -23,7 +23,7 @@ export default function patientPage(props): JSX.Element {
     
     const medicinesList = propsMedicines.map((prop) =>
     
-        <tr className={styles.tr}>
+        <tr className={styles.tr} key={prop.date}>
             <td className={styles.td}>{format(new Date(prop.date), 'dd.MM.yyyy')}</td>
         </tr>
     );
